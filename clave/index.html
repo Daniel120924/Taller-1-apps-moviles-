@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclado Bancario</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Ingreso de clave de la sucursal virtual de Bancolombia</h1>
+    <div id="app">
+        <input type="text" id="amountInput" placeholder="Ingrese la clave" readonly>
+        <div id="keyboard">
+            <div class="key" onclick="appendNumber(0)">0</div>
+            <div class="key" onclick="appendNumber(1)">1</div>
+            <div class="key" onclick="appendNumber(2)">2</div>
+            <div class="key" onclick="appendNumber(3)">3</div>
+            <div class="key" onclick="appendNumber(4)">4</div>
+            <div class="key" onclick="appendNumber(5)">5</div>
+            <div class="key" onclick="appendNumber(6)">6</div>
+            <div class="key" onclick="appendNumber(7)">7</div>
+            <div class="key" onclick="appendNumber(8)">8</div>
+            <div class="key" onclick="appendNumber(9)">9</div>
+        </div>
+        
+        <div id="special-keys">
+            <div class="key" onclick="clearAmount()">Enviar</div>
+            <div class="key" onclick="deleteLastDigit()">Delete</div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
