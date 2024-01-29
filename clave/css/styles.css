@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #app {
+    text-align: center;
+    position: relative;
+  }
+  
+  #amountInput {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #keyboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    position: relative;
+    z-index: 1; /* Teclado principal en capa 1 */
+  }
+  
+  .key {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid #2980b9;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .key:hover {
+    background-color: #2980b9;
+  }
+  
+  #special-keys {
+    display: flex;
+    flex-direction:row;
+    position: absolute;
+    justify-content:flex-end;
+
+    bottom: -5px;
+    right: -5px;
+    z-index: 2; /* Special Keys en capa 2 */
+  }
+  
+  #special-keys .key {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid #c0392b;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  #special-keys .key:hover {
+    background-color: #c0392b;
+  }
+  
+  #keyboard .key {
+    position: relative;
+    z-index: 1; 
+  }
+  
