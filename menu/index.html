@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu navegacion scroll</title>
+    
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/experiences.css" />
+    <script defer src="js/app.js"></script>
+  </head>
+  <body>
+    <header class="topheader">
+      <nav class="topnav">
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="#profile" class="selected">Definición</a></li>
+          <li><a href="#experience">Características</a></li>
+          <li><a href="#skills">Lenguajes</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="profile" id="profile">
+        <div class="profile-info">
+          <h1 class="profile-title">Aplicaciones Móviles</h1>
+          <p class="profile-details">
+            Son programas diseñados específicamente para ser utilizados en dispositivos móviles,
+            como teléfonos inteligentes y tabletas. Estas aplicaciones están diseñadas para ejecutarse
+            en sistemas operativos móviles como Android o iOS.
+          </p>
+        </div>
+        <span class="profile-img-section">
+          <img
+            class="profile-img"
+            src="img/professional-profile.png"
+            alt="programador"
+          />
+          <div class="profile-img-line"></div>
+        </span>
+      </section>
+    </div>
+
+    <section class="experiences" id="experience">
+      <img src="img/wave.svg" alt="división" class="wave" />
+      <div class="experiences-body">
+        <h2 class="experiences-title">Características</h2>
+        <div class="experiences-grid">
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experience">
+            <div class="experience-date">Interfaz de Usuario Intuitiva</div>
+            <div class="experience-description">
+              Las aplicaciones móviles suelen tener interfaces de usuario diseñadas para ser intuitivas y fáciles de usar,
+              especialmente teniendo en cuenta las pantallas táctiles de los dispositivos móviles.
+            </div>
+          </div>
+          <div class="experience experience_left">
+            <div class="experience-date">Acceso a Dispositivos y Funcionalidades</div>
+            <div class="experience-description">
+              Las aplicaciones móviles aprovechan las funciones específicas de los dispositivos,
+              como la cámara, el GPS, los sensores de movimiento y otros, para proporcionar experiencias más ricas y personalizadas.
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experience">
+            <div class="experience-date">Conectividad en Tiempo Real</div>
+            <div class="experience-description">
+              Muchas aplicaciones móviles requieren conectividad en tiempo real para actualizaciones de contenido,
+              interacciones sociales, notificaciones push y otras funciones que dependen de la conexión a Internet.
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/wave.svg" alt="división" class="wave wave_bottom" />
+    </section>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="skills" id="skills">
+        <h2 class="skills-title">Lenguajes para Desarrollar Aplicaciones Móviles</h2>
+        <ul class="skills-list">
+          <li class="skills-skill">Dart (Flutter)</li>
+          <li class="skills-skill">Swift (iOS)</li>
+          <li class="skills-skill">Objective-C (iOS)</li>
+          <li class="skills-skill">Java (Android)</li>
+          <li class="skills-skill">JavaScript (React Native, NativeScript)</li>
+          <li class="skills-skill">Kotlin (Android)</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
